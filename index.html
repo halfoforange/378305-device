@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="headers">
       <div class="logo">
         <a>DEVICE</a>
       </div>
-      <nav class="main-header">
+      <div class="first-header">
         <div class="search-container">
           <form action="#" method="get">
             <input type="search" class="search-input" placeholder="Поиск по сайту">
@@ -23,12 +24,12 @@
           <a href="#">Сравнить</a>
           <a href="#">Корзина</a>
         </div>
-      </nav>
+      </div>
       <nav class="second-header">
         <div class="catalog-menu">
           <a href="#" class="drop-menu">Каталог товаров</a>
         </div>
-        <div class="guarantees">
+        <div class="info">
           <a href="#">Доставка</a>
           <a href="#">Гарантия</a>
         </div>
@@ -38,71 +39,99 @@
       </nav>
     </header>
     <main>
-      <section class="wrapper">
+    <section class="wrapper">
       <div class="slider">
-        <a href="#"><img src="#" alt="selfystick" title="selfystick" width="384" height="486"></a>
-        <h1 class="slider-heading">Делай селфи, как Бен Стиллер!</h1>
-        <p class="slider-desc">Самая длинная палка для селфи доступна в нашем магазине.
-        Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-        </p>
-        <a href="#" class="more">Подробнее</a>
-        <div class="slider-toggles">
-          <i class="toggle"></i>
-          <i class="toggle"></i>
-          <i class="toggle"></i>
+        <div class="slider-img">
+          <a href="#"><img src="img/slider-1.png" alt="selfystick" title="selfystick" width="384" height="486"></a>
         </div>
-        <ul class="features">
-          <li class="features-item">
-            <h2 class="features-heading">8,5 м</h2>
-            <p class="features-desc">Длина палки</p>
-          </li>
-          <li class="features-item">
-            <h2 class="features-heading">5 кг</h2>
-            <p class="features-desc">Вес палки</p>
-          </li>
-          <li class="features-item">
-            <h2 class="features-heading">Карбон</h2>
-            <p class="features-desc">Материал</p>
-          </li>
-        </ul>
+        <div class="slider-desc">
+          <h1 class="slider-heading">Делай селфи, как Бен Стиллер!</h1>
+          <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине.
+          Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+          </p>
+          <a href="#" class="more">Подробнее</a>
+          <div class="slider-toggles">
+            <i class="toggle"></i>
+            <i class="toggle"></i>
+            <i class="toggle"></i>
+          </div>
+          <ul class="features">
+            <li class="features-item">
+              <h2 class="features-heading">8,5 м</h2>
+              <p class="features-desc">Длина палки</p>
+            </li>
+            <li class="features-item">
+              <h2 class="features-heading">5 кг</h2>
+              <p class="features-desc">Вес палки</p>
+            </li>
+            <li class="features-item">
+              <h2 class="features-heading">Карбон</h2>
+              <p class="features-desc">Материал</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
-      <section class="categories">
+    <section class="categories">
       <ul class="categories-list">
         <li class="categories-item">
           <a href="#">
-            <img src="#" alt="Виртуальная реальность" title="Виртуальная реальность" width="160" height="160" class="categories-pic">
-            <h3 class="categories-heading">Виртуальная реальность</h3>
+            <div class="item-image-wrapper">
+              <img src="img/popular-1.png" alt="Виртуальная реальность" title="Виртуальная реальность" width="160" height="160" class="categories-pic">
+            </div>
+            <div class="item-text-wrapper">
+              <h3 class="categories-heading">Виртуальная реальность</h3>
+            </div>
           </a>
         </li>
         <li class="categories-item">
           <a href="#">
-            <img src="#" alt="Моноподы для селфи" title="Моноподы для селфи" width="160" height="160" class="categories-pic">
-            <h3 class="categories-heading">Моноподы для селфи</h3>
+            <div class="item-image-wrapper">
+              <img src="img/popular-2.png" alt="Моноподы для селфи" title="Моноподы для селфи" width="160" height="160" class="categories-pic">
+            </div>
+            <div class="item-text-wrapper">
+              <h3 class="categories-heading">Моноподы для селфи</h3>
+            </div>
           </a>
         </li>
         <li class="categories-item">
           <a href="#">
-            <img src="#" alt="Экшн-камеры" title="Экшн-камеры" width="160" height="160" class="categories-pic">
-            <h3 class="categories-heading">Экшн-камеры</h3>
+            <div class="item-image-wrapper">
+              <img src="img/popular-3.png" alt="Экшн-камеры" title="Экшн-камеры" width="160" height="160" class="categories-pic">
+            </div>
+            <div class="item-text-wrapper">
+              <h3 class="categories-heading">Экшн-камеры</h3>
+            </div>
           </a>
         </li>
         <li class="categories-item">
           <a href="#">
-            <img src="#" alt="Фитнес-браслеты" title="Фитнес-браслеты" width="160" height="160" class="categories-pic">
-            <h3 class="categories-heading">Фитнес-браслеты</h3>
+            <div class="item-image-wrapper">
+              <img src="img/popular-4.png" alt="Фитнес-браслеты" title="Фитнес-браслеты" width="160" height="160" class="categories-pic">
+            </div>
+            <div class="item-text-wrapper">
+              <h3 class="categories-heading">Фитнес-браслеты</h3>
+            </div>
           </a>
         </li>
         <li class="categories-item">
           <a href="#">
-            <img src="#" alt="Умные часы" title="Умные часы" width="160" height="160" class="categories-pic">
-            <h3 class="categories-heading">Умные часы</h3>
+            <div class="item-image-wrapper">
+              <img src="img/popular-5.png" alt="Умные часы" title="Умные часы" width="160" height="160" class="categories-pic">
+            </div>
+            <div class="item-text-wrapper">
+              <h3 class="categories-heading">Умные часы</h3>
+            </div>
           </a>
         </li>
         <li class="categories-item">
           <a href="#">
-            <img src="#" alt="Квадрокоптеры" title="Квадрокоптеры" width="160" height="160" class="categories-pic">
-            <h3 class="categories-heading">Квадрокоптеры</h3>
+            <div class="item-image-wrapper">
+              <img src="img/poppular-6.png" alt="Квадрокоптеры" title="Квадрокоптеры" width="160" height="160" class="categories-pic">
+            </div>
+            <div class="item-text-wrapper">
+              <h3 class="categories-heading">Квадрокоптеры</h3>
+            </div>
           </a>
         </li>
       </ul>
