@@ -14,7 +14,6 @@
         <div class="search-container">
           <form action="#" method="get">
             <input type="search" class="search-input" placeholder="Поиск по сайту">
-            <input type="submit" name="search-btn" value="">
           </form>
         </div>
         <div class="user-block">
@@ -87,7 +86,7 @@
         <li class="categories-item">
           <a href="#">
             <div class="item-image-wrapper">
-              <img src="img/popular-2.png" alt="Моноподы для селфи" title="Моноподы для селфи" width="160" height="160" class="categories-pic">
+              <img class="sec-picture" src="img/popular-2.png" alt="Моноподы для селфи" title="Моноподы для селфи" width="160" height="160" class="categories-pic">
             </div>
             <div class="item-text-wrapper">
               <h3 class="categories-heading">Моноподы для селфи</h3>
@@ -136,17 +135,38 @@
         </li>
       </ul>
     </section>
-      <section class="clients">
+    <div class="services-wrapper">
+      <div class="services-names">
+        <label for="info-1" class="active"><input type="radio" name="info-1" value="delivery">Доставка</label>
+        <label for="info-2"><input type="radio" name="info-2" value="assurance">Гарантия</label>
+        <label for="info-1"><input type="radio" name="info-1" value="credit">Кредит</label>
+      </div>
+    </div>
+    <div class="info-text-delivery">
+      <h2 class="second-header">Доставка</h2>
+      <p class="info-desc">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+    </div>
+    <div class="info-text-assurance">
+      <h2 class="second-header">Гарантия</h2>
+      <p class="info-desc">Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+                            Товар, не дом, конечно же.</p>
+    </div>
+    <div class="info-text-credit">
+      <h2 class="second-header">Кредит</h2>
+      <p class="info-desc">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
+                            условия кредита. Выгодные для нашего банка, разумеется.</p>
+    </div>
+    <section class="clients">
         <div class="clients-wrapper">
         <ul class="clients-list">
-          <li class="clients-item"><img src="#" alt="dji" title="dji"></li>
-          <li class="clients-item"><img src="#" alt="sp-gadgets" title="sp-gadgets"></li>
-          <li class="clients-item"><img src="#" alt="gopro" title="gopro"></li>
-          <li class="clients-item"><img src="#" alt="vive" title="vive"></li>
+          <li class="clients-item"><img src="img/clients/dji.png" alt="dji" title="dji"></li>
+          <li class="clients-item"><img src="img/clients/spgadgets.png" alt="sp-gadgets" title="sp-gadgets"></li>
+          <li class="clients-item"><img src="img/clients/gopro.png" alt="gopro" title="gopro"></li>
+          <li class="clients-item"><img src="img/clients/vive.png" alt="vive" title="vive"></li>
         </ul>
       </div>
-      </section>
-      <section class="contact-info">
+    </section>
+    <section class="contact-info">
         <div class="contact-info-wrapper">
           <div class="about-us">
             <h2 class="subheader">О нас</h2>
@@ -160,7 +180,7 @@
             </div>
             <a href="#">Подробнее о нас</a>
           </div>
-          <div class="contacts">
+          <div class="pick-up">
             <h2 class="subheader">Контакты</h2>
             <p class="desc">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
             <div class="map">
