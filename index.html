@@ -38,8 +38,9 @@
       </nav>
     </header>
     <main>
-    <section class="wrapper">
+    <section class="slider-wrapper">
       <div class="slider">
+        <input type="radio" id="selfie" name="selfie" class="slide" checked>
         <div class="slider-img">
           <a href="#"><img src="img/slider-1.png" alt="selfystick" title="selfystick" width="384" height="486"></a>
         </div>
@@ -70,7 +71,6 @@
               <p class="features-desc">Материал</p>
             </li>
           </ul>
-        </div>
       </div>
     </section>
     <section class="categories">
@@ -144,18 +144,18 @@
         <label for="credit" class="service-name">Кредит</label>
       </section>
       <section class="services">
-        <input type="radio" id="delivery" class="service" checked>
+        <input type="radio" id="delivery" class="service" name="service" checked>
           <div class="info-text-delivery services-desc">
             <h2 class="services-heading">Доставка</h2>
             <p class="info-desc">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </div>
-        <input type="radio" id="assurance" class="service">
+        <input type="radio" id="assurance" class="service" name="service">
           <div class="info-text-assurance services-desc">
             <h2 class="services-heading">Гарантия</h2>
             <p class="info-desc">Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
                                   Товар, не дом, конечно же.</p>
           </div>
-        <input type="radio" id="credit" class="service">
+        <input type="radio" id="credit" class="service" name="service">
           <div class="info-text-credit services-desc">
             <h2 class="services-heading">Кредит</h2>
             <p class="info-desc">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные

@@ -22,6 +22,10 @@ body {
   color: #464646;
 }
 
+.slider input {
+  display: none;
+}
+
 .headers {
   background-color: rgba(240,197,46,.5);
   padding: 0 60px;
@@ -131,6 +135,8 @@ body {
   margin-bottom: 60px;
 }
 
+
+
 .slider-img {
   margin-left: 112px;
 }
@@ -170,14 +176,22 @@ h2.features-heading {
   font-family: Gilroy, sans-serif;
   font-size: 18px;
   font-weight: 900;
-  padding-left: 43px;
-  padding-right: 39px;
+  padding: 12px 39px 12px 43px;
   letter-spacing: .2em;
   text-decoration: none;
   color: #000;
   text-transform: uppercase;
-  background-color: #f0c52e;
-  background-size: 100% 8px;
+  background: linear-gradient(0deg, #ffffff 0%, #ffffff 30%, #F0C52E 30%, #F0C52E 70%, #ffffff 70%, #ffffff 100%);
+  transition: all .2s ease;
+  box-sizing: border-box;
+}
+
+.more:hover {
+  background: #F0C52E;
+}
+
+.more:active {
+  color: rgba(0,0,0,.3);
 }
 
 .slider-toggles {
