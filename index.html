@@ -11,30 +11,18 @@
         <a>DEVICE</a>
       </div>
       <div class="first-header">
-        <div class="search-container">
-          <form action="#" method="get">
-            <input type="search" class="search-input" placeholder="Поиск по сайту">
-          </form>
-        </div>
-        <div class="user-block">
-          <a href="#">Войти</a>
-        </div>
-        <div class="busket">
-          <a href="#">Сравнить</a>
-          <a href="#">Корзина</a>
-        </div>
+        <form action="#" method="get">
+          <input type="search" class="search-input" placeholder="Поиск по сайту">
+        </form>
+        <a href="#" class="user-block">Войти</a>
+        <a href="#" class="compare">Сравнить</a>
+        <a href="#" class="busket">Корзина</a>
       </div>
       <nav class="second-header">
-        <div class="catalog-menu">
-          <a href="#" class="drop-menu">Каталог товаров</a>
-        </div>
-        <div class="info">
-          <a href="#">Доставка</a>
-          <a href="#">Гарантия</a>
-        </div>
-        <div class="contacts">
-          <a href="#">Контакты</a>
-        </div>
+          <a href="#" class="catalog-menu">Каталог товаров</a>
+          <a href="#" class="delivery-menu">Доставка</a>
+          <a href="#" class="assurance-menu">Гарантия</a>
+          <a href="#" class="contacts-menu">Контакты</a>
       </nav>
     </header>
     <main>
@@ -45,7 +33,7 @@
           <a href="#"><img src="img/slider-1.png" alt="selfystick" title="selfystick" width="384" height="486"></a>
         </div>
         <div class="slider-desc">
-          <h1 class="slider-heading">Делай селфи, как Бен Стиллер!</h1>
+          <h1 class="slider-heading">Делай селфи, <br> как Бен Стиллер!</h1>
           <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине.
           Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
           </p>
@@ -137,31 +125,33 @@
         </li>
       </ul>
     </section>
-    <div class="services-wrapper">
-      <section class="services-names">
-        <label for="delivery" class="service-name">Доставка</label>
-        <label for="assurance" class="service-name">Гарантия</label>
-        <label for="credit" class="service-name">Кредит</label>
-      </section>
-      <section class="services">
-        <input type="radio" id="delivery" class="service" name="service" checked>
-          <div class="info-text-delivery services-desc">
-            <h2 class="services-heading">Доставка</h2>
-            <p class="info-desc">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          </div>
-        <input type="radio" id="assurance" class="service" name="service">
-          <div class="info-text-assurance services-desc">
-            <h2 class="services-heading">Гарантия</h2>
-            <p class="info-desc">Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
-                                  Товар, не дом, конечно же.</p>
-          </div>
-        <input type="radio" id="credit" class="service" name="service">
-          <div class="info-text-credit services-desc">
-            <h2 class="services-heading">Кредит</h2>
-            <p class="info-desc">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
-                                  условия кредита. Выгодные для нашего банка, разумеется.</p>
-          </div>
-      </section>
+    <div class="services">
+      <div class="services-wrapper">
+        <section class="services-names">
+          <label for="delivery" class="service-name">Доставка</label>
+          <label for="assurance" class="service-name">Гарантия</label>
+          <label for="credit" class="service-name">Кредит</label>
+        </section>
+        <section class="services-text">
+          <input type="radio" id="delivery" class="service" name="service" checked>
+            <div class="info-text-delivery services-desc">
+              <h2 class="services-heading">Доставка</h2>
+              <p class="info-desc">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </div>
+          <input type="radio" id="assurance" class="service" name="service">
+            <div class="info-text-assurance services-desc">
+              <h2 class="services-heading">Гарантия</h2>
+              <p class="info-desc">Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+                                    Товар, не дом, конечно же.</p>
+            </div>
+          <input type="radio" id="credit" class="service" name="service">
+            <div class="info-text-credit services-desc">
+              <h2 class="services-heading">Кредит</h2>
+              <p class="info-desc">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
+                                    условия кредита. Выгодные для нашего банка, разумеется.</p>
+            </div>
+        </section>
+      </div>
     </div>
     <section class="clients">
         <div class="clients-wrapper">
@@ -177,7 +167,8 @@
         <div class="contact-info-wrapper">
           <div class="about-us">
             <h2 class="second-heading">О нас</h2>
-            <p class="desc">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас. Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+            <p class="desc">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+            <p class="desc">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
             <div class="delivery-companies">
               <ul class="companies">
                 <li class="companies-item">Деловые линии</li>
@@ -188,7 +179,7 @@
             <a href="#">Подробнее о нас</a>
           </div>
           <div class="pick-up">
-            <h2 class="subheader">Контакты</h2>
+            <h2 class="second-heading">Контакты</h2>
             <p class="desc">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
             <div class="map">
                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1493237191847" width="560" height="222" frameborder="0" style="border:0" allowfullscreen></iframe>
