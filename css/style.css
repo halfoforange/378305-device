@@ -15,14 +15,19 @@
 }
 
 body {
-  width: 1160px;
   margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
   color: #464646;
 }
 
-.headers {
+.content-width {
+  width: 1160px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.headers-wrapper {
   background-color: rgba(240,197,46,.5);
   padding: 0 60px;
   margin-top: 40px;
@@ -311,8 +316,6 @@ h2.features-heading {
 
 .services {
   background-color: #e5e5e5;
-  width: 1440px;
-  margin-left: -140px;
 }
 
 .services-wrapper {
@@ -388,6 +391,8 @@ input:checked + .services-desc {
   margin: 0;
   margin-bottom: 79px;
 }
+
+/* Информация */
 .contact-info-wrapper {
   display: flex;
   justify-content: space-between;
@@ -463,4 +468,68 @@ input:checked + .services-desc {
   line-height: 40px;
   list-style-type: none;
   margin-bottom: 77px;
+}
+
+footer {
+  background-color: #464646;
+  padding: 59px 0;
+  margin-top: 94px;
+}
+
+.first-row {
+  margin-bottom: 40px;
+}
+
+.logo-alt .logo-alt-link {
+  display: inline-block;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  color: #ffc600;
+  line-height: 40px;
+}
+
+.footer-menu {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 687px;
+}
+
+footer a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 15px;
+  font-family: Open Sans, sans-serif;
+  color: #fff;
+}
+
+.footer-menu a:nth-child(1) {
+  margin-right: 63px;
+}
+
+.footer-menu a:nth-child(2) {
+  margin-right: 64px;
+}
+
+.second-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-navigation {
+  display: flex;
+  width: 428px;
+  justify-content: space-between;
+  margin-right: 37px;
+}
+
+.footer-navigation a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 18px;
+  font-family: Gilroy, sans-serif;
+  color: #fff;
+  letter-spacing: .2em;
 }
