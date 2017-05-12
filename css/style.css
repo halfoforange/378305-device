@@ -37,10 +37,6 @@ body {
   color: #464646;
 }
 
-.catalog-body {
-  width: 1440px;
-}
-
 /* Базовые стили */
 
 .logo-img {
@@ -143,6 +139,7 @@ body {
 
 .user-block-form {
   display: inline-block;
+  position: relative;
   margin-right: 60px;
   margin-left: 38px;
 }
@@ -150,13 +147,49 @@ body {
 .search-input {
   display: inline-block;
   width: 440px;
+  padding-bottom: 14px;
   background: none;
   outline: none;
   box-shadow: none;
   border: 0;
   font-size: 15px;
+  line-height: 15px;
   font-weight: 100;
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, .3);
+}
+
+.search-input:hover::placeholder {
+  color: rgba(0, 0, 0, .6);
+}
+
+.search-input:focus + .search-btn{
+  display: inline-block;
+}
+
+.search-btn {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: -16px;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 15px;
+  line-height: 15px;
+  color: #000;
+  text-decoration: none;
+  padding: 16px 15px;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+.search-btn:hover {
+  background-color: #000;
+  color: #fff;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+.search-btn:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .search-input:focus {
@@ -779,18 +812,19 @@ footer a {
 }
 
 .content {
-  display: flex;
+  display: block;
 }
 
 .sidebar {
   display: inline-block;
   height: 1283px;
+  margin-right: 0;
   background: linear-gradient(180deg, #dbdbdb 0%, #dbdbdb 5.8%, #ebebeb 5.8%, #ebebeb 100%);
 }
 
 .sidebar-wrapper {
   width: 201px;
-  margin-left: 198px;
+  margin-left: auto;
   margin-right: 68px;
 }
 
@@ -814,12 +848,14 @@ footer a {
 
 .shop {
   display: inline-block;
+  margin-left: 0;
   height: 1210px;
 }
 
 .sorting,
 .items-grid  {
   padding-left: 72px;
+  margin-left: 0;
 }
 
 .item-wrapper {
@@ -860,10 +896,6 @@ footer a {
   text-transform: uppercase;
   color: #000;
   text-decoration: none;
-}
-
-.pagination-numbers > .pagination-text:last-child {
-  text-align: right;
 }
 
 .sorting {
