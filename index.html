@@ -20,8 +20,8 @@
           <a href="#" class="busket link">Корзина</a>
         </div>
         <nav class="main-navigation">
-            <a href="#" class="catalog-menu">Каталог товаров</a>
-            <div class="catalog-menu-opened"> <!-- сюда засунуть разворачивающееся меню, по ховеру — display: block -->
+            <a href="catalog.html" class="catalog-menu">Каталог товаров</a>
+            <div class="catalog-menu-opened">
 
               <div class="cameras-menu">
                 <a href="#" class="link">Виртуальная реальность</a>
@@ -47,8 +47,8 @@
     </header>
     <main>
       <section class="slider-wrapper container">
-        <div class="slider">
-          <input type="radio" id="selfie" name="selfie" class="slide" checked>
+        <div class="slider first-slide">
+          <input type="radio" id="selfie" name="slider" class="slide" checked>
           <div class="slider-img">
             <a href="#"><img src="img/slider-1.png" alt="selfystick" title="selfystick" width="384" height="486"></a>
           </div>
@@ -77,6 +77,69 @@
               <li class="features-item">
                 <h2 class="features-heading">Карбон</h2>
                 <p class="features-desc">Материал</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="slider second-slide">
+          <input type="radio" id="selfie" name="slider" class="slide">
+          <div class="slider-img">
+            <a href="#"><img src="img/slider-2.png" alt="selfystick" title="selfystick" width="345" height="485"></a>
+          </div>
+          <div class="slider-desc">
+            <h1 class="slider-heading">Делай селфи, <br> как Бен Стиллер!</h1>
+            <p class="slider-text">
+            Самая длинная палка для селфи доступна в нашем магазине.
+            Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+            </p>
+            <div class="more-wrapper">
+              <a href="#" class="more btn">Подробнее</a>
+              <div class="slider-toggles">
+                <i class="toggle"></i>
+                <i class="toggle"></i>
+                <i class="toggle"></i>
+              </div>
+            </div>
+            <ul class="features">
+              <li class="features-item">
+                <h2 class="features-heading">8,5 м</h2>
+                <p class="features-desc">Длина палки</p>
+              </li>
+              <li class="features-item">
+                <h2 class="features-heading">5 кг</h2>
+                <p class="features-desc">Вес палки</p>
+              </li>
+              <li class="features-item">
+                <h2 class="features-heading">Карбон</h2>
+                <p class="features-desc">Материал</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="slider third-slide">
+          <input type="radio" id="selfie" name="slider" class="slide">
+          <div class="slider-img">
+            <a href="#"><img src="img/slider-3.png" alt="selfystick" title="selfystick" width="526" height="334"></a>
+          </div>
+          <div class="slider-desc">
+            <h1 class="slider-heading">
+              Порхает как бабочка,жалит как пчела!
+            </h1>
+            <p class="slider-text">
+              Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+            </p>
+            <div class="more-wrapper">
+              <a href="#" class="more btn">Подробнее</a>
+              <div class="slider-toggles">
+                <i class="toggle"></i>
+                <i class="toggle"></i>
+                <i class="toggle"></i>
+              </div>
+            </div>
+            <ul class="features">
+              <li class="features-item">
+                <h2 class="features-heading">8,5 м</h2>
+                <p class="features-desc">Длина палки</p>
               </li>
             </ul>
           </div>
@@ -229,11 +292,11 @@
           <div class="address">
             <a href="#">г. Москва, ул. Строителей, 15</a>
           </div>
-          <nav class="footer-navigation">
+          <div class="footer-navigation">
             <a href="#" class="delivery-footer">Доставка</a>
             <a href="#" class="assurance-footer">Гарантия</a>
             <a href="#" class="contacts-footer">Контакты</a>
-          </nav>
+          </div>
           <div class="tel">
             <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
           </div>

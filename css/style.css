@@ -179,6 +179,10 @@ body {
   margin-right: 318px;
 }
 
+.catalog-menu:hover + .catalog-menu-opened {
+  display: flex;
+}
+
 .catalog-menu-opened {
   position: absolute;
   display: none;
@@ -281,7 +285,7 @@ body {
   padding-top: 32px;
 }
 
-.slider-desc::before {
+.first-slide::before {
   content: "01";
   font-size: 179px;
   font-family: Gilroy, sans-serif;
@@ -291,6 +295,15 @@ body {
   right: -41px;
   top: -39px;
 }
+
+.second-slide {
+  display: none;
+}
+
+.third-slide {
+  display: none;
+}
+
 
 .slider-text {
   font-family: Open Sans, sans-serif;
@@ -458,6 +471,9 @@ h2.features-heading {
   width: 160px;
 }
 
+.service-name:hover {
+  background: #F0C52E;
+}
 
 .services-names::after {
   content: "";
