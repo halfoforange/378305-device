@@ -330,11 +330,11 @@ body {
 }
 
 .first-slide::before {
+  position: absolute;
   content: "01";
   font-size: 179px;
   font-family: Gilroy, sans-serif;
   font-weight: 900;
-  position: absolute;
   color: #fff;
   right: -41px;
   top: -39px;
@@ -347,7 +347,6 @@ body {
 .third-slide {
   display: none;
 }
-
 
 .slider-text {
   font-family: Open Sans, sans-serif;
