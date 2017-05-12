@@ -31,11 +31,14 @@
 }
 
 body {
-  width: 1440px;
   margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
   color: #464646;
+}
+
+.catalog-body {
+  width: 1440px;
 }
 
 /* Базовые стили */
@@ -140,11 +143,13 @@ body {
 
 .user-block-form {
   display: inline-block;
-  margin-right: 331px;
+  margin-right: 60px;
   margin-left: 38px;
 }
 
 .search-input {
+  display: inline-block;
+  width: 440px;
   background: none;
   outline: none;
   box-shadow: none;
@@ -152,6 +157,10 @@ body {
   font-size: 15px;
   font-weight: 100;
   color: rgba(0, 0, 0, 0.3);
+}
+
+.search-input:focus {
+  border-bottom: 2px solid black;
 }
 
 .search-input::placeholder {
@@ -187,6 +196,8 @@ body {
   position: absolute;
   display: none;
   top: 52px;
+  left: -60px;
+  padding-left: 60px;
   z-index: 100;
   background-color: #F7E296;
   width: 1100px;
@@ -429,10 +440,7 @@ h2.features-heading {
 
 .services-wrapper {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: top;
-  margin: 167px 0 94px;
+  margin: 167px auto 94px;
   height: 288px;
 }
 
@@ -457,7 +465,7 @@ h2.features-heading {
   text-transform: uppercase;
   font-weight: 900;
   text-align: center;
-  padding: 0 20px 0 140px;
+  padding: 0 20px 0 0;
   transform: translateY(-14%);
   font-size: 18px;
 }
@@ -477,7 +485,7 @@ h2.features-heading {
 
 .services-names::after {
   content: "";
-  left: 417px;
+  left: 277px;
   top: -79px;
   position: absolute;
   width: 7px;
@@ -699,6 +707,64 @@ footer a {
   display: inline-block;
 }
 
+.write-us.modal {
+  display: none;
+}
+
+.modal-wrapper {
+  background-color: #fff;
+  width: 960px;
+  height: 553px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 100px;
+}
+
+.modal-input-wrapper {
+  display: inline-block;
+}
+
+.modal-input-wrapper:nth-child(2) {
+  margin-left: 34px;
+}
+
+.textarea-wrapper {
+  margin-top: 28px
+}
+
+.modal-textarea {
+  border: 0;
+  width: 760px;
+  height: 156px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-top: 18px;
+  background-color: #f2f2f2;
+  margin-bottom: 55px;
+}
+
+.modal-input {
+  border: 0;
+  background-color: #f2f2f2;
+  width: 340px;
+  height: 50px;
+  vertical-align: center;
+  padding-left: 20px;
+}
+
+.modal-input-label {
+  display: block;
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 900;
+  margin-bottom: 13px;
+  color: #000;
+}
+
 /* catalog.html */
 
 .breadcrumbs {
@@ -793,6 +859,7 @@ footer a {
   letter-spacing: .2em;
   text-transform: uppercase;
   color: #000;
+  text-decoration: none;
 }
 
 .pagination-numbers > .pagination-text:last-child {
