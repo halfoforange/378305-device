@@ -7,20 +7,38 @@
   </head>
   <body>
     <header class="headers">
-      <div class="headers-wrapper content-width">
+      <div class="headers-wrapper container">
         <div class="logo">
-          <a>DEVICE</a>
+          <a> <img class="logo-img" src="img/logo.svg"> </a>
         </div>
-        <div class="first-header">
-          <form action="#" method="get">
+        <div class="user-block">
+          <form class="user-block-form" action="#" method="get">
             <input type="search" class="search-input" placeholder="Поиск по сайту">
           </form>
-          <a href="#" class="user-block">Войти</a>
-          <a href="#" class="compare">Сравнить</a>
-          <a href="#" class="busket">Корзина</a>
+          <a href="#" class="login link">Войти</a>
+          <a href="#" class="compare link">Сравнить</a>
+          <a href="#" class="busket link">Корзина</a>
         </div>
-        <nav class="second-header">
+        <nav class="main-navigation">
             <a href="#" class="catalog-menu">Каталог товаров</a>
+            <div class="catalog-menu-opened"> <!-- сюда засунуть разворачивающееся меню, по ховеру — display: block -->
+
+              <div class="cameras-menu">
+                <a href="#" class="link">Виртуальная реальность</a>
+                <a href="#" class="link">Моноподы для селфи</a>
+                <a href="#" class="link">Экшн-камеры</a>
+              </div>
+
+              <div class="watches-menu">
+                <a href="#" class="link">Фитнес-браслеты</a>
+                <a href="#" class="link">Умные часы</a>
+              </div>
+
+              <div class="copters-menu"
+                <a href="#" class="delivery-menu">Квадрокоптеры</a>
+              </div>
+            </div>
+
             <a href="#" class="delivery-menu">Доставка</a>
             <a href="#" class="assurance-menu">Гарантия</a>
             <a href="#" class="contacts-menu">Контакты</a>
@@ -28,7 +46,7 @@
       </div>
     </header>
     <main>
-      <section class="slider-wrapper content-width">
+      <section class="slider-wrapper container">
         <div class="slider">
           <input type="radio" id="selfie" name="selfie" class="slide" checked>
           <div class="slider-img">
@@ -40,7 +58,7 @@
             Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
             </p>
             <div class="more-wrapper">
-              <a href="#" class="more">Подробнее</a>
+              <a href="#" class="more btn">Подробнее</a>
               <div class="slider-toggles">
                 <i class="toggle"></i>
                 <i class="toggle"></i>
@@ -61,11 +79,12 @@
                 <p class="features-desc">Материал</p>
               </li>
             </ul>
+          </div>
         </div>
       </section>
-      <section class="categories">
-        <div class="categories-wrapper content-width">
-          <ul class="categories-list">
+      <section class="categories container">
+        <div class="categories-wrapper content-width"> <!-- classi-obertki -->
+          <ul class="categories-wrapper content-width categories-list"> <!-- -->
             <li class="categories-item">
               <a href="#">
                 <div class="item-image-wrapper">
@@ -131,71 +150,71 @@
 
       </section>
       <section class="services">
-        <div class="services-wrapper content-width">
-          <section class="services-names">
-            <label for="delivery" class="service-name">Доставка</label>
+        <div class="services-wrapper container">
+          <div class="services-names">
+            <label for="delivery" class="service-name active">Доставка</label>
             <label for="assurance" class="service-name">Гарантия</label>
             <label for="credit" class="service-name">Кредит</label>
-          </section>
-          <section class="services-text">
+          </div>
+          <div class="services-text">
             <input type="radio" id="delivery" class="service" name="service" checked>
-              <div class="info-text-delivery services-desc">
-                <h2 class="services-heading">Доставка</h2>
-                <p class="info-desc">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-              </div>
+            <div class="info-text-delivery services-desc">
+              <h2 class="services-heading">Доставка</h2>
+              <p class="info-desc">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </div>
+
             <input type="radio" id="assurance" class="service" name="service">
-              <div class="info-text-assurance services-desc">
-                <h2 class="services-heading">Гарантия</h2>
-                <p class="info-desc">Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
-                                      Товар, не дом, конечно же.</p>
-              </div>
+            <div class="info-text-assurance services-desc">
+              <h2 class="services-heading">Гарантия</h2>
+              <p class="info-desc">Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+                                    Товар, не дом, конечно же.</p>
+            </div>
+
             <input type="radio" id="credit" class="service" name="service">
-              <div class="info-text-credit services-desc">
-                <h2 class="services-heading">Кредит</h2>
-                <p class="info-desc">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
-                                      условия кредита. Выгодные для нашего банка, разумеется.</p>
-              </div>
-          </section>
+            <div class="info-text-credit services-desc">
+              <h2 class="services-heading">Кредит</h2>
+              <p class="info-desc">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
+                                    условия кредита. Выгодные для нашего банка, разумеется.</p>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="clients">
-          <div class="clients-wrapper content-width">
-            <ul class="clients-list">
-              <li class="clients-item"><img src="img/clients/dji.png" alt="dji" title="dji"></li>
-              <li class="clients-item"><img src="img/clients/spgadgets.png" alt="sp-gadgets" title="sp-gadgets"></li>
-              <li class="clients-item"><img src="img/clients/gopro.png" alt="gopro" title="gopro"></li>
-              <li class="clients-item"><img src="img/clients/vive.png" alt="vive" title="vive"></li>
-            </ul>
-        </div>
+      <section class="clients container">
+          <ul class="clients-wrapper container"> <!-- -->
+            <li class="clients-item"><img src="img/clients/dji.png" alt="dji" title="dji"></li> <!-- ШИРИНА И ВЫСОТА МАТЬ ТВОЮ!!! -->
+            <li class="clients-item"><img src="img/clients/spgadgets.png" alt="sp-gadgets" title="sp-gadgets"></li>
+            <li class="clients-item"><img src="img/clients/gopro.png" alt="gopro" title="gopro"></li>
+            <li class="clients-item"><img src="img/clients/vive.png" alt="vive" title="vive"></li>
+          </ul>
       </section>
-      <section class="contact-info">
-        <div class="contact-info-wrapper content-width">
+      <section class="contact-info container">
+        <div class="contact-info-wrapper">
           <div class="about-us">
             <h2 class="second-heading">О нас</h2>
             <p class="desc">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
             <p class="desc">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-            <div class="delivery-companies">
-              <ul class="companies">
+            <div class="delivery-companies"> <!-- -->
+              <ul class="companies"><!-- -->
                 <li class="companies-item">Деловые линии</li>
                 <li class="companies-item">Автотрейдинг</li>
                 <li class="companies-item">ЖелДорЭкспедиция</li>
               </ul>
             </div>
-            <a href="#">Подробнее о нас</a>
+            <a class="btn" href="#">Подробнее о нас</a>
           </div>
           <div class="pick-up">
             <h2 class="second-heading">Контакты</h2>
             <p class="desc">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-            <div class="map">
-               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1493237191847" width="560" height="222" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="map"> <!-- ёкартинка -->
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1493237191847" width="480" height="222" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
-            <a href="#">Напишите нам</a>
+            <a class="btn" href="#">Напишите нам</a>
           </div>
         </div>
       </section>
     </main>
-    <footer>
-      <div class="footer-wrapper content-width">
+    <footer class="main-footer">
+      <div class="footer-wrapper container">
         <div class="first-row">
           <div class="logo-alt">
             <a class="logo-alt-link">DEVICE</a>
@@ -216,16 +235,16 @@
             <a href="#" class="contacts-footer">Контакты</a>
           </nav>
           <div class="tel">
-            <a href="#">Тел.: +7 (495) 495-95-95</a>
+            <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
           </div>
         </div>
         <div class="third-row">
           <div class="social">
-            <a href="#"><img src="" class="social-icon"></a>
-            <a href="#"><img src="" class="social-icon"></a>
-            <a href="#"><img src="" class="social-icon"></a>
+            <a href="#"> <img class="social-icon" src="img/icons/facebook.png"> </a>
+            <a href="#"> <img class="social-icon" src="img/icons/insta.png"> </a>
+            <a href="#"> <img class="social-icon" src="img/icons/twitter.png"> </a>
           </div>
-          <img src="" class="academy-logo">
+          <a href="https://htmlacademy.ru/intensive/htmlcss"> <img src="" class="academy-logo"> </a> <!-- Логотип Академии в подвале ведёт на [лендинг интенсива «Базовый HTML и CSS»](https://htmlacademy.ru/intensive/htmlcss). -->
         </div>
       </div>
     </footer>

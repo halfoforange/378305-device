@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс-каталог</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body class="">
+    <header class="headers">
+      <div class="headers-wrapper container">
+        <div class="logo title">
+          <a href="index.html"> <img class="logo-img" src="img/logo.svg"> </a>
+        </div>
+        <div class="user-block">
+          <form class="user-block-form" action="#" method="get">
+            <input type="search" class="search-input" placeholder="Поиск по сайту">
+          </form>
+          <a href="#" class="login link">Войти</a>
+          <a href="#" class="compare link">Сравнить</a>
+          <a href="#" class="busket link">Корзина</a>
+        </div>
+        <nav class="main-navigation">
+            <a href="#" class="catalog-menu">Каталог товаров</a>
+            <a href="#" class="delivery-menu">Доставка</a>
+            <a href="#" class="assurance-menu">Гарантия</a>
+            <a href="#" class="contacts-menu">Контакты</a>
+        </nav>
+      </div>
+    </header>
+    <section class="page-header container">
+      <div class="page-header-wrapper container">
+        <h1 class="main-header title">Моноподы для селфи</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="link" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="link" href="#">Каталог товаров</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="link" href="#">Моноподы для селфи</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <main class="content">
+      <aside class="sidebar">
+        <div class="sidebar-wrapper">
+          <div class="subtitle">
+            <span class="catalog-subtitle filters-subtitle">
+              Фильтр:
+            </span>
+          </div>
+
+          <div class="filters-wrapper">
+            <div class="price">
+              <span class="filters-name">
+                Стоимость
+              </span>
+              <div class="range-wrapper">
+                <div class="line"> </div>
+                <div class="toggle-left"> </div>
+                <div class="toggle-right"> </div>
+              </div>
+            </div>
+
+            <div class="color">
+              <span class="filters-name">
+                Цвет
+              </span>
+              <form class="checkbox color-checkbox" method="get">
+                <label class="checkbox-label"> <input class="checkbox-input" type="checkbox" value="black">Чёрный</label>
+                <label class="checkbox-label"> <input class="checkbox-input" type="checkbox" value="white">Белый</label>
+                <label class="checkbox-label"> <input class="checkbox-input" type="checkbox" value="blue">Синий</label>
+                <label class="checkbox-label"> <input class="checkbox-input" type="checkbox" value="red">Красный</label>
+                <label class="checkbox-label"> <input class="checkbox-input" type="checkbox" value="pink">Розовый</label>
+              </form>
+            </div>
+
+            <div class="bluetooth-filter">
+              <span class="filters-name">
+                Bluetooth
+              </span>
+              <form class="radio bluetooth-radio" method="get">
+                <label class="radio-label bluetooth-label"> <input class="radio-input" type="radio" value="yes" name="bluetooth-filter">Есть</label>
+                <label class="radio-label bluetooth-label"> <input class="radio-input" type="radio" value="no" name="bluetooth-filter">Нет</label>
+              </form>
+            </div>
+
+            <div class="filter-submit">
+              <button class="btn">
+                Показать
+              </button>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <div class="shop">
+        <div class="sorting">
+          <span class="catalog-subtitle">
+            Сортировка:
+          </span>
+          <div class="radio sorting-controls">
+            <label class="radio-label sorting-label"> <input class="radio-input sorting-buttons" type="radio" name="sorting" value="price" checked>По цене</label>
+            <label class="radio-label sorting-label"> <input class="radio-input sorting-buttons" type="radio" name="sorting" value="type">По типу</label>
+            <label class="radio-label sorting-label"> <input class="radio-input sorting-buttons" type="radio" name="sorting" value="popular">По популярности</label>
+          </div>
+        </div>
+
+        <div class="items-grid">
+          <div class="item-wrapper">
+            <a href="#" class="item-link">
+              <img class="item-img" src="img/item-1.jpg" width="360" height="380">
+              <p class="item-desc">
+                Любительская селфи-палка
+              </p>
+              <p class="item-price">
+                500 руб.
+              </p>
+            </a>
+          </div>
+          <div class="item-wrapper">
+            <a href="#" class="item-link">
+              <img class="item-img" src="img/item-2.jpg" width="360" height="380">
+              <p class="item-desc">
+                Профессиональная селфи-палка
+              </p>
+              <p class="item-price">
+                1 500 руб.
+              </p>
+            </a>
+          </div>
+          <div class="item-wrapper">
+            <a href="#" class="item-link">
+              <img class="item-img" src="img/item-3.jpg" width="360" height="380">
+              <p class="item-desc">
+                Непотопляемая селфи-палка
+              </p>
+              <p class="item-price">
+                2 500 руб.
+              </p>
+            </a>
+          </div>
+          <div class="item-wrapper">
+            <a href="#" class="item-link">
+              <img class="item-img" src="img/item-4.jpg" width="360" height="380">
+              <p class="item-desc">
+                Селфи-палка &laquo;Следуй за мной&raquo;
+              </p>
+              <p class="item-price">
+                4 900 руб.
+              </p>
+            </a>
+          </div>
+        </div>
+
+        <div class="pagination">
+          <p class="pagination-text">
+            назад
+          </p>
+          <div class="pagination-numbers">
+            <p class="pagination-text">
+              1
+            </p>
+            <p class="pagination-text">
+              2
+            </p>
+            <p class="pagination-text">
+              3
+            </p>
+          </div>
+          <p class="pagination-text">
+            вперёд
+          </p>
+        </div>
+      </div>
+
+    </main>
+    <footer class="main-footer footer-catalog">
+      <div class="footer-wrapper container">
+
+        <div class="first-row">
+          <div class="logo-alt">
+            <a class="logo-alt-link">DEVICE</a>
+            <div class="footer-menu">
+              <a href="#" class="user-block-footer">Войти</a>
+              <a href="#" class="compare-footer">Сравнить</a>
+              <a href="#" class="busket-footer">Корзина</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="second-row">
+          <div class="address">
+            <a href="#">г. Москва, ул. Строителей, 15</a>
+          </div>
+          <nav class="footer-navigation">
+            <a href="#" class="delivery-footer">Доставка</a>
+            <a href="#" class="assurance-footer">Гарантия</a>
+            <a href="#" class="contacts-footer">Контакты</a>
+          </nav>
+          <div class="tel">
+            <a href="#">Тел.: +7 (495) 495-95-95</a>
+          </div>
+        </div>
+
+        <div class="third-row">
+          <div class="social">
+            <a href="#"><img src="" class="social-icon"></a>
+            <a href="#"><img src="" class="social-icon"></a>
+            <a href="#"><img src="" class="social-icon"></a>
+          </div>
+          <img src="" class="academy-logo">
+        </div>
+
+      </div>
+
+    </footer>
+  </body>
+</html>
