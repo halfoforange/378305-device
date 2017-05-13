@@ -11,17 +11,19 @@
         <div class="logo">
           <a> <img class="logo-img" src="img/logo.svg" alt="device-logo"> </a>
         </div>
-        <div class="user-block">
+        <div class="user-block container">
           <form class="user-block-form" action="#" method="get">
             <input type="search" class="search-input" placeholder="Поиск по сайту">
             <a class="search-btn" href="#">Найти</a>
           </form>
-          <a href="#" class="login link">Войти</a>
-          <a href="#" class="compare link">Сравнить</a>
-          <a href="#" class="busket link">Корзина</a>
+          <div class="user-menu">
+            <a href="#" class="login link">Войти</a>
+            <a href="#" class="compare link">Сравнить</a>
+            <a href="#" class="busket link">Корзина</a>
+          </div>
         </div>
         <nav class="main-navigation">
-            <a href="catalog.html" class="catalog-menu">Каталог товаров</a>
+            <a href="catalog.html" class="catalog-menu main-nav-link">Каталог товаров</a>
             <div class="catalog-menu-opened">
 
               <div class="cameras-menu">
@@ -36,13 +38,13 @@
               </div>
 
               <div class="copters-menu">
-                <a href="#" class="delivery-menu">Квадрокоптеры</a>
+                <a href="#" class="link">Квадрокоптеры</a>
               </div>
             </div>
 
-            <a href="#" class="delivery-menu">Доставка</a>
-            <a href="#" class="assurance-menu">Гарантия</a>
-            <a href="#" class="contacts-menu">Контакты</a>
+            <a href="#" class="delivery-menu main-nav-link">Доставка</a>
+            <a href="#" class="assurance-menu main-nav-link">Гарантия</a>
+            <a href="#" class="contacts-menu main-nav-link">Контакты</a>
         </nav>
       </div>
     </header>
@@ -68,15 +70,15 @@
             </div>
             <ul class="features">
               <li class="features-item">
-                <h2 class="features-heading">8,5 м</h2>
+                <span class="features-heading">8,5 м</span>
                 <p class="features-desc">Длина палки</p>
               </li>
               <li class="features-item">
-                <h2 class="features-heading">5 кг</h2>
+                <span class="features-heading">5 кг</span>
                 <p class="features-desc">Вес палки</p>
               </li>
               <li class="features-item">
-                <h2 class="features-heading">Карбон</h2>
+                <span class="features-heading">Карбон</span>
                 <p class="features-desc">Материал</p>
               </li>
             </ul>
@@ -152,7 +154,7 @@
             <li class="categories-item">
               <a href="#">
                 <div class="item-image-wrapper">
-                  <img src="img/popular-1.png" alt="Виртуальная реальность" title="Виртуальная реальность" width="160" height="160" class="categories-pic">
+                  <img class="categories-pic" src="img/popular-1.png" alt="Виртуальная реальность" title="Виртуальная реальность" width="160" height="160">
                 </div>
                 <div class="item-text-wrapper">
                   <h3 class="categories-heading">Виртуальная реальность</h3>
@@ -162,7 +164,7 @@
             <li class="categories-item">
               <a href="#">
                 <div class="item-image-wrapper">
-                  <img class="sec-picture" src="img/popular-2.png" alt="Моноподы для селфи" title="Моноподы для селфи" width="160" height="160">
+                  <img class="categories-pic" src="img/popular-2.png" alt="Моноподы для селфи" title="Моноподы для селфи" width="160" height="160">
                 </div>
                 <div class="item-text-wrapper">
                   <h3 class="categories-heading">Моноподы для селфи</h3>
@@ -172,7 +174,7 @@
             <li class="categories-item">
               <a href="#">
                 <div class="item-image-wrapper">
-                  <img src="img/popular-3.png" alt="Экшн-камеры" title="Экшн-камеры" width="160" height="160" class="categories-pic">
+                  <img class="categories-pic" src="img/popular-3.png" alt="Экшн-камеры" title="Экшн-камеры" width="160" height="160">
                 </div>
                 <div class="item-text-wrapper">
                   <h3 class="categories-heading">Экшн-камеры</h3>
@@ -182,7 +184,7 @@
             <li class="categories-item">
               <a href="#">
                 <div class="item-image-wrapper">
-                  <img src="img/popular-4.png" alt="Фитнес-браслеты" title="Фитнес-браслеты" width="160" height="160" class="categories-pic">
+                  <img class="categories-pic" src="img/popular-4.png" alt="Фитнес-браслеты" title="Фитнес-браслеты" width="160" height="160">
                 </div>
                 <div class="item-text-wrapper">
                   <h3 class="categories-heading">Фитнес-браслеты</h3>
@@ -192,7 +194,7 @@
             <li class="categories-item">
               <a href="#">
                 <div class="item-image-wrapper">
-                  <img src="img/popular-5.png" alt="Умные часы" title="Умные часы" width="160" height="160" class="categories-pic">
+                  <img class="categories-pic" src="img/popular-5.png" alt="Умные часы" title="Умные часы" width="160" height="160">
                 </div>
                 <div class="item-text-wrapper">
                   <h3 class="categories-heading">Умные часы</h3>
@@ -202,7 +204,7 @@
             <li class="categories-item">
               <a href="#">
                 <div class="item-image-wrapper">
-                  <img src="img/poppular-6.png" alt="Квадрокоптеры" title="Квадрокоптеры" width="160" height="160" class="categories-pic">
+                  <img class="categories-pic" src="img/poppular-6.png" alt="Квадрокоптеры" title="Квадрокоптеры" width="160" height="160">
                 </div>
                 <div class="item-text-wrapper">
                   <h3 class="categories-heading">Квадрокоптеры</h3>
@@ -257,20 +259,18 @@
             <h2 class="second-heading">О нас</h2>
             <p class="desc">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
             <p class="desc">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-            <div class="delivery-companies"> <!-- -->
-              <ul class="companies"><!-- -->
-                <li class="companies-item">Деловые линии</li>
-                <li class="companies-item">Автотрейдинг</li>
-                <li class="companies-item">ЖелДорЭкспедиция</li>
-              </ul>
-            </div>
-            <a class="btn" href="#">Подробнее о нас</a>
+            <ul class="companies">
+              <li class="companies-item">Деловые линии</li>
+              <li class="companies-item">Автотрейдинг</li>
+              <li class="companies-item">ЖелДорЭкспедиция</li>
+            </ul>
+            <a class="btn companies-btn" href="#">Подробнее о нас</a>
           </div>
           <div class="pick-up">
             <h2 class="second-heading">Контакты</h2>
             <p class="desc">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
             <div class="map"> <!-- ёкартинка -->
-               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1493237191847" width="480" height="222" style="border:0" allowfullscreen></iframe>
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1493237191847" width="560" height="222" style="border:0" allowfullscreen></iframe>
             </div>
             <a class="btn" href="#">Напишите нам</a>
           </div>
@@ -300,9 +300,9 @@
       <div class="footer-wrapper container">
         <div class="first-row">
           <div class="logo-alt">
-            <a class="logo-alt-link">DEVICE</a>
+            <a class="logo-alt-link"><img class="logo-alt-img" src="img/logo-alt.svg" alt="Device-logo" width="162" height="35"></a>
             <div class="footer-menu">
-              <a href="#" class="user-block-footer">Войти</a>
+              <a href="#" class="login-footer">Войти</a>
               <a href="#" class="compare-footer">Сравнить</a>
               <a href="#" class="busket-footer">Корзина</a>
             </div>
@@ -313,9 +313,9 @@
             <a href="#">г. Москва, ул. Строителей, 15</a>
           </div>
           <div class="footer-navigation">
-            <a href="#" class="delivery-footer">Доставка</a>
-            <a href="#" class="assurance-footer">Гарантия</a>
-            <a href="#" class="contacts-footer">Контакты</a>
+            <a href="#" class="delivery-footer footer-nav-btn">Доставка</a>
+            <a href="#" class="assurance-footer footer-nav-btn">Гарантия</a>
+            <a href="#" class="contacts-footer footer-nav-btn">Контакты</a>
           </div>
           <div class="tel">
             <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
@@ -327,7 +327,7 @@
             <a href="#"> <img class="social-icon" src="img/icons/insta.png" alt="insta"> </a>
             <a href="#"> <img class="social-icon" src="img/icons/twitter.png" alt="twitter"> </a>
           </div>
-          <a href="https://htmlacademy.ru/intensive/htmlcss"> <img src="#" class="academy-logo" alt="academy-logo"> </a> <!-- Логотип Академии в подвале ведёт на [лендинг интенсива «Базовый HTML и CSS»](https://htmlacademy.ru/intensive/htmlcss). -->
+          <a href="https://htmlacademy.ru/intensive/htmlcss"> <img src="img/icons/htmlacademy.png" class="academy-logo" alt="academy-logo"> </a> <!-- Логотип Академии в подвале ведёт на [лендинг интенсива «Базовый HTML и CSS»](https://htmlacademy.ru/intensive/htmlcss). -->
         </div>
       </div>
     </footer>
