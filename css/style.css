@@ -1,31 +1,31 @@
 @font-face {
     font-family: 'Gilroy';
-    src: url('../fonts/gilroylight.woff');,
-    src: url('../fonts/gilroylight.woff2') format('woff2');
+    src: url('../fonts/gilroylight.woff') format('woff'),
+         url('../fonts/gilroylight.woff2') format('woff2');
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('../fonts/gilroyextrabold.woff');
-    src: url('../fonts/gilroyextrabold.woff2') format('woff2');
-    font-weight: 900;
+    src: url('../fonts/gilroyextrabold.woff') format('woff'),
+         url('../fonts/gilroyextrabold.woff2') format('woff2');
+    font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Open Sans';
-    src: url('../fonts/opensans.woff');
-    src: url('../fonts/opensans.woff2') format('woff2');
+    src: url('../fonts/opensans.woff') format('woff'),
+         url('../fonts/opensans.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Open Sans';
-    src: url('../fonts/opensanslight.woff');
-    src: url('../fonts/opensanslight.woff2') format('woff2');
+    src: url('../fonts/opensanslight.woff') format('woff'),
+         url('../fonts/opensanslight.woff2') format('woff2');
     font-weight: 100;
     font-style: normal;
 }
@@ -74,14 +74,14 @@ body {
 .title {
   font-family: Gilroy, sans-serif;
   font-size: 47px;
-  font-weight: 900;
+  font-weight: 700;
   color: #000;
 }
 
 .btn {
   font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 18px;
-  font-weight: 900;
+  font-weight: 700;
   padding: 12px 39px 12px 43px;
   letter-spacing: .2em;
   text-decoration: none;
@@ -98,7 +98,7 @@ body {
 .btn:hover {
   font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 18px;
-  font-weight: 900;
+  font-weight: 700;
   padding: 12px 39px 12px 43px;
   letter-spacing: .2em;
   text-decoration: none;
@@ -150,7 +150,8 @@ body {
   background-color: rgba(240,197,46,.5);
   padding: 0 60px;
   margin-top: 40px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* Первый хэдер */
@@ -427,7 +428,7 @@ body {
 }
 
 .assurance-menu {
-  margin-right: 100px;
+  margin-right: 95px;
 }
 
 .info a {
@@ -444,7 +445,7 @@ body {
 .contacts-menu {
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 18px;
   font-family: Gilroy, sans-serif;
   color: #000;
@@ -462,7 +463,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  margin-bottom: 90px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(240,197,46,0.5)),color-stop(21%, rgba(240,197,46,0.5)),color-stop(15%, rgba(248,226,151,1)),color-stop(15%, rgba(255,255,255,1)),to(rgba(255,255,255,1)));
   background: linear-gradient(to bottom, rgba(240,197,46,0.5) 0%,rgba(240,197,46,0.5) 21%,rgba(248,226,151,1) 15%,rgba(255,255,255,1) 15%,rgba(255,255,255,1) 100%);
 }
@@ -480,28 +480,66 @@ body {
   opacity: 1;
 }
 
-.slider input {
-  display: none;
+.slider-img-wrapper {
+  width: 565px;
 }
 
 .slider-img {
-  margin-left: 90px;
-  margin-top: -4px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.second-slide .features-heading {
+  margin-top: 0;
+}
+
+.third-slide .slider-img-wrapper {
+  margin-top: 64px;
+  padding-left: 13px;
+}
+
+.third-slide .slider-desc {
+  margin-left: 22px;
+}
+
+.third-slide .features {
+  margin-top: 23px;
+  justify-content: flex-start;
+}
+
+.third-slide .features-item:first-child {
+  margin-right: 50px;
 }
 
 .slider-wrapper {
   position: relative;
+  margin-bottom: 100px;
 }
 
 .slider-wrapper::before {
   content: "";
   position: absolute;
   right: 460px;
-  top: 32px;
+  top: 35px;
   width: 100px;
   height: 7px;
   background-color: #fff;
   z-index: 10;
+}
+
+.slider-input {
+  display: none;
+}
+
+.slider  {
+  display: none;
+}
+
+.slider-input:checked + .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .slider-desc {
@@ -513,8 +551,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 480px;
-  margin-left: 127px;
+  width: 491px;
+  margin-left: 35px;
   padding-top: 32px;
 }
 
@@ -523,18 +561,32 @@ body {
   content: "01";
   font-size: 179px;
   font-family: Gilroy, sans-serif;
-  font-weight: 900;
+  font-weight: 700;
   color: #fff;
   right: 49px;
-  top: -40px;
+  top: -30px;
 }
 
-.second-slide {
-  display: none;
+.second-slide::before {
+  position: absolute;
+  content: "02";
+  font-size: 179px;
+  font-family: Gilroy, sans-serif;
+  font-weight: 700;
+  color: #fff;
+  right: 49px;
+  top: -30px;
 }
 
-.third-slide {
-  display: none;
+.third-slide::before {
+  position: absolute;
+  content: "03";
+  font-size: 179px;
+  font-family: Gilroy, sans-serif;
+  font-weight: 700;
+  color: #fff;
+  right: 49px;
+  top: -30px;
 }
 
 .slider-text {
@@ -550,10 +602,10 @@ body {
 .slider-heading {
   font-family: Gilroy, sans-serif;
   font-size: 47px;
-  font-weight: 900;
+  font-weight: 700;
   color: #000;
-  margin-top: 42px;
-  margin-bottom: 36px;
+  margin-top: 47px;
+  margin-bottom: 41px;
 }
 
 .features {
@@ -603,6 +655,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 76px;
+  padding-right: 15px;
 }
 
 .toggle {
@@ -728,7 +781,7 @@ body {
   letter-spacing: .2em;
   color: #000;
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 700;
   text-align: center;
   padding: 0 20px 0 0;
   -webkit-transform: translateY(-14%);
@@ -791,7 +844,7 @@ input.service {
   display: none;
 }
 
-input:checked + .services-desc {
+input.service:checked + .services-desc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -799,6 +852,44 @@ input:checked + .services-desc {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.delivery,
+.assurance,
+.credit {
+  position: relative;
+}
+
+.delivery::after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/delivery.png);
+  background-repeat: no-repeat;
+  left: 557px;
+  width: 195px;
+  height: 156px;
+}
+
+.assurance::after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/warranty.png);
+  background-repeat: no-repeat;
+  left: 544px;
+  top: -30px;
+  width: 195px;
+  height: 197px;
+}
+
+.credit::after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/credit.png);
+  background-repeat: no-repeat;
+  left: 524px;
+  top: -30px;
+  width: 195px;
+  height: 197px;
 }
 
 /* Клиенты */
@@ -817,6 +908,11 @@ input:checked + .services-desc {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+
+.clients-item {
+  cursor: pointer;
 }
 
 /* Информация */
@@ -919,7 +1015,7 @@ input:checked + .services-desc {
 .second-heading {
   font-family: Gilroy, sans-serif;
   font-size: 47px;
-  font-weight: 900;
+  font-weight: 700;
   color: #000;
 }
 
@@ -934,7 +1030,7 @@ input:checked + .services-desc {
 .main-footer {
   background-color: #464646;
   padding-top: 64px;
-  margin-top: 91px;
+  margin-top: 96px;
   height: 259px;
 }
 
@@ -950,10 +1046,14 @@ input:checked + .services-desc {
   margin-bottom: 33px;
 }
 
-.logo-alt .logo-alt-link {
+.logo-alt {
   display: inline-block;
+  vertical-align: top;
+}
+
+.logo-alt .logo-alt-link {
   font-family: 'Gilroy', sans-serif;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 48px;
   color: #ffc600;
   line-height: 40px;
@@ -1051,7 +1151,7 @@ footer a {
 .footer-navigation a {
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 18px;
   font-family: Gilroy, sans-serif;
   color: #fff;
@@ -1112,25 +1212,97 @@ footer a {
   margin-top: 28px
 }
 
+.modal-textarea::-webkit-input-placeholder {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.modal-textarea:-ms-input-placeholder {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.modal-textarea::placeholder {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+  color: rgba(70, 70, 70, 0.4);
+}
+
 .modal-textarea {
-  border: 0;
-  width: 760px;
-  height: 156px;
+  border: 3px solid #f2f2f2;
+  width: 754px;
+  height: 150px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-left: 20px;
   padding-top: 18px;
   background-color: #f2f2f2;
   margin-bottom: 55px;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+  color: #464646;
+}
+
+.modal-textarea:hover {
+  border: 3px solid #eaeaea;
+  background-color: #eaeaea;
+}
+
+.modal-textarea:focus {
+  border: 3px solid #f0c52e;
+  background-color: white;
+  color: #464646;
 }
 
 .modal-input {
-  border: 0;
+  border: 3px solid #f2f2f2;
   background-color: #f2f2f2;
-  width: 340px;
-  height: 50px;
+  width: 334px;
+  height: 44px;
   vertical-align: center;
   padding-left: 20px;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.modal-input:hover {
+  border: 3px solid #eaeaea;
+  background-color: #eaeaea;
+}
+
+.modal-input:focus {
+  border: 3px solid #f0c52e;
+  background-color: white;
+  color: #464646;
+}
+
+.modal-input::-webkit-input-placeholder {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.modal-input:-ms-input-placeholder {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.modal-input::placeholder {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+  color: rgba(70, 70, 70, 0.4);
 }
 
 .modal-input-label {
@@ -1138,7 +1310,7 @@ footer a {
   font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 18px;
   line-height: 18px;
-  font-weight: 900;
+  font-weight: 700;
   margin-bottom: 13px;
   color: #000;
 }
@@ -1155,6 +1327,30 @@ footer a {
           justify-content: space-between;
   padding: 0;
   margin-top: 20px;
+}
+
+.breadcrumbs-item {
+  position: relative;
+}
+
+.breadcrumbs-item:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/icons/nav-arrow.png);
+  height: 7px;
+  width: 4px;
+  left: -22px;
+  top: 7px;
+}
+
+.breadcrumbs-item:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/icons/nav-arrow.png);
+  height: 7px;
+  width: 4px;
+  left: -22px;
+  top: 7px;
 }
 
 .content {
@@ -1182,17 +1378,66 @@ footer a {
   display: block;
 }
 
-.filters-wrapper {
-  padding-left: 15px;
-}
-
 .filters-name {
   display: block;
+  position: relative;
   font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 18px;
   line-height: 18px;
-  font-weight: 900;
+  font-weight: 700;
   color: #000;
+}
+
+.filters-name::before {
+  content: "";
+  width: 200px;
+  height: 2px;
+  top: -10px;
+  position: absolute;
+  background-color: #000;
+}
+
+.range-wrapper {
+  margin-top: 40px;
+  position: relative;
+}
+
+.line {
+  width: 200px;
+  height: 2px;
+  background-color: #dbdbdb;
+}
+
+.active-line {
+  width: 110px;
+  height: 2px;
+  background-color: #91c92f;
+}
+
+.toggle-left,
+.toggle-right {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background-color: #efefef;
+  border: 2px solid black;
+  border-radius: 50%;
+  top: -6px;
+  cursor: pointer;
+}
+
+.toggle-right {
+  left: 108px;
+}
+
+.toggle-left:active,
+.toggle-right:active {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background-color: #7eae29;
+  border: 2px solid white;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .bluetooth-label {
@@ -1257,7 +1502,7 @@ footer a {
   padding: 0;
   font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 16px;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 16px;
   letter-spacing: .2em;
   text-transform: uppercase;
@@ -1276,7 +1521,7 @@ footer a {
   padding-bottom: 30px;
   font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 16px;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
   letter-spacing: .2em;
@@ -1300,11 +1545,11 @@ footer a {
 }
 
 .price {
-  margin-top: 82px;
+  margin-top: 75px;
 }
 
 .color {
-  margin-top: 122px;
+  margin-top: 81px;
 }
 
 .color-checkbox {
@@ -1315,7 +1560,7 @@ footer a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 30px;
+  margin-top: 37px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1330,7 +1575,7 @@ footer a {
 .checkbox-label::before {
   content: "";
   position: absolute;
-  left: -20px;
+  left: 0;
   background-color: #dbdbdb;
   width: 25px;
   height: 25px;
@@ -1343,7 +1588,7 @@ footer a {
 .checkbox-label:active .checkbox-label::before {
   content: "";
   position: absolute;
-  left: -20px;
+  left: 0;
   background-color: #cecece;
   background-repeat: no-repeat;
   width: 25px;
@@ -1353,7 +1598,7 @@ footer a {
 .checkbox-label.label-active::before {
   content: "";
   position: absolute;
-  left: -20px;
+  left: 0;
   background-color: #dbdbdb;
   background-image: url(../img/icons/tick.png);
   background-position: 44% 44%;
@@ -1363,8 +1608,38 @@ footer a {
 }
 
 .bluetooth-filter {
-  margin-top: 167px;
-  margin-bottom: 52px;
+  margin-top: 50px;
+  margin-bottom: 42px;
+}
+
+.bluetooth-radio {
+  margin-top: 37px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.bluetooth-label::before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/icons/radio-unactive.png);
+  left: 0;
+  top: 37px;
+}
+
+.bluetooth-label-active {
+  margin-bottom: 26px;
+}
+
+.bluetooth-label-active::before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/icons/radio-active.png);
+  left: 0;
+  top: -4px;
 }
 
 .item-img {
@@ -1381,7 +1656,7 @@ footer a {
   color: #000;
   font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 18px;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 18px;
 }
 
@@ -1409,7 +1684,7 @@ h1 {
 .page-header {
   width: 1040px;
   margin-top: 29px;
-  margin-bottom: 47px;
+  margin-bottom: 55px;
   margin-left: auto;
   margin-right: auto;
 }
