@@ -150,11 +150,13 @@ body {
   background-color: rgba(240,197,46,.5);
   padding: 0 60px;
   margin-top: 40px;
+  box-sizing: border-box;
 }
 
 /* Первый хэдер */
 .user-block {
   display: block;
+  width: 1040px;
   margin-bottom: 32px;
 }
 
@@ -210,7 +212,7 @@ body {
   display: none;
   position: absolute;
   right: 0;
-  top: -16px;
+  top: -17px;
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 15px;
   line-height: 15px;
@@ -1164,7 +1166,7 @@ footer a {
   vertical-align: top;
   height: 1283px;
   font-size: 15px;
-  width: 35.5%;
+  width: 28%;
   background: -webkit-gradient(linear, left top, left bottom, from(#dbdbdb), color-stop(5.8%, #dbdbdb), color-stop(5.8%, #ebebeb), to(#ebebeb));
   background: linear-gradient(180deg, #dbdbdb 0%, #dbdbdb 5.8%, #ebebeb 5.8%, #ebebeb 100%);
 }
@@ -1201,7 +1203,7 @@ footer a {
   display: inline-block;
   vertical-align: top;
   margin-left: 0;
-  width: 64.5%;
+  width: 72%;
 }
 
 .sorting,
@@ -1405,7 +1407,9 @@ h1 {
 }
 
 .page-header {
-  padding-left: 59px;
+  width: 1040px;
   margin-top: 29px;
   margin-bottom: 47px;
+  margin-left: auto;
+  margin-right: auto;
 }
