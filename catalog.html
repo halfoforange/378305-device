@@ -150,30 +150,45 @@
               </span>
 
               <form class="checkbox color-checkbox" method="get">
-                <label class="checkbox-label label-active">
-                  <input class="checkbox-input" type="checkbox" value="black">
-                  Чёрный
-                </label>
+                <div class="checkbox-wrapper">
+                  <input class="checkbox-input" id ="black" type="checkbox" value="black" checked>
 
-                <label class="checkbox-label">
-                  <input class="checkbox-input" type="checkbox" value="white">
-                  Белый
-                </label>
+                  <label class="checkbox-label" for="black">
+                    Чёрный
+                  </label>
+                </div>
 
-                <label class="checkbox-label label-active">
-                  <input class="checkbox-input" type="checkbox" value="blue">
-                  Синий
-                </label>
+                <div class="checkbox-wrapper">
+                  <input class="checkbox-input" id ="white" type="checkbox" value="white">
 
-                <label class="checkbox-label label-active">
-                  <input class="checkbox-input" type="checkbox" value="red">
-                  Красный
-                </label>
+                  <label class="checkbox-label" for="white">
+                    Белый
+                  </label>
+                </div>
 
-                <label class="checkbox-label">
-                  <input class="checkbox-input" type="checkbox" value="pink">
-                  Розовый
+                <div class="checkbox-wrapper">
+                  <input class="checkbox-input" id ="blue" type="checkbox" value="blue" checked>
+
+                  <label class="checkbox-label" for="blue">
+                    Синий
+                  </label>
+                </div>
+
+                <div class="checkbox-wrapper">
+                  <input class="checkbox-input" id ="red" type="checkbox" value="red" checked>
+
+                  <label class="checkbox-label" for="red">
+                    Красный
+                  </label>
+                </div>
+
+                <div class="checkbox-wrapper">
+                  <input class="checkbox-input" id ="pink" type="checkbox" value="pink">
+
+                  <label class="checkbox-label" for="pink">
+                    Розовый
                 </label>
+                </div>
               </form>
             </div>
 
@@ -183,15 +198,21 @@
               </span>
 
               <form class="radio bluetooth-radio" method="get">
-                <label class="radio-label bluetooth-label bluetooth-label-active">
-                  <input class="radio-input" type="radio" value="yes" name="bluetooth-filter">
-                  Есть
-                </label>
+                <div class="bluetooth-radio-wrapper">
+                  <input class="radio-input" type="radio" id="bluetooth-yes" value="yes" name="bluetooth-filter" checked>
 
-                <label class="radio-label bluetooth-label">
-                  <input class="radio-input" type="radio" value="no" name="bluetooth-filter">
-                  Нет
-                </label>
+                  <label class="radio-label bluetooth-label" for="bluetooth-yes">
+                    Есть
+                  </label>
+                </div>
+
+                <div class="bluetooth-radio-wrapper">
+                  <input class="radio-input" type="radio" id="bluetooth-no" value="no" name="bluetooth-filter">
+
+                  <label class="radio-label bluetooth-label" for="bluetooth-no">
+                    Нет
+                  </label>
+                </div>
               </form>
             </div>
 
@@ -210,22 +231,21 @@
             Сортировка:
           </span>
 
-          <div class="radio sorting-controls">
-            <label class="radio-label sorting-label">
-              <input class="radio-input sorting-buttons" type="radio" name="sorting" value="price" checked>
+          <ul class="radio sorting-controls">
+            <li class="sorting-label">
               По цене
-            </label>
+            </li>
 
-            <label class="radio-label sorting-label">
-              <input class="radio-input sorting-buttons" type="radio" name="sorting" value="type">
+            <li class="sorting-label">
               По типу
-            </label>
+            </li>
 
-            <label class="radio-label sorting-label">
-              <input class="radio-input sorting-buttons" type="radio" name="sorting" value="popular">
+            <li class="sorting-label">
               По популярности
-            </label>
-          </div>
+            </li>
+          </ul>
+          <div class="sorting-arrow-up"></div>
+          <div class="sorting-arrow-down"></div>
         </div>
 
         <div class="items-grid">
@@ -306,6 +326,7 @@
       </div>
 
     </main>
+
     <footer class="main-footer footer-catalog">
       <div class="footer-wrapper container">
         <div class="first-row">
@@ -332,8 +353,11 @@
 
         <div class="second-row">
           <div class="address">
-            <a href="#">г. Москва, ул. Строителей, 15</a>
+            <span class="address-text">
+              г. Москва, ул. Строителей, 15
+            </span>
           </div>
+
           <div class="footer-navigation">
             <a href="#" class="delivery-footer footer-nav-btn">
               Доставка
@@ -357,17 +381,11 @@
 
         <div class="third-row">
           <div class="social">
-            <a href="#">
-              <img class="social-icon" src="img/icons/facebook.png" alt="facebook">
-            </a>
+            <a class="facebook-icon social-icon" href="#"></a>
 
-            <a href="#">
-              <img class="social-icon" src="img/icons/insta.png" alt="insta">
-            </a>
+            <a class="insta-icon social-icon" href="#"></a>
 
-            <a href="#">
-              <img class="social-icon" src="img/icons/twitter.png" alt="twitter">
-            </a>
+            <a class="twitter-icon social-icon" href="#"></a>
           </div>
 
           <a href="https://htmlacademy.ru/intensive/htmlcss">
