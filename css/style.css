@@ -1660,7 +1660,7 @@ footer a {
 
 .item-wrapper {
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: top;
   position: relative;
 }
 
@@ -1839,7 +1839,7 @@ footer a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 180px;
+  height: 180px;
 }
 
 .checkbox-wrapper {
@@ -1855,6 +1855,7 @@ footer a {
   content: "";
   position: absolute;
   left: 0;
+  top: -3px;
   background-color: #dbdbdb;
   width: 25px;
   height: 25px;
@@ -1873,7 +1874,7 @@ background-color: #c4c4c4;
   position: absolute;
   width: 12px;
   height: 7px;
-  top: 9px;
+  top: 6px;
   left: 6px;
   background-image: url(../img/icons/tick.png);
   background-repeat: no-repeat;
