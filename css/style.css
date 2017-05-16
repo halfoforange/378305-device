@@ -293,14 +293,20 @@ body {
 
 .logoff {
   display: none;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 197px;
   margin-right: 83px;
 }
 
 .logoff-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .logoff-link {
@@ -1945,7 +1951,8 @@ fieldset {
   left: 0;
   top: 0;
   padding: 50px 50px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   text-align: center;
   padding: 50% 20%;
 }
