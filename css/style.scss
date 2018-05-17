@@ -1,0 +1,94 @@
+@import 'components.scss';
+@import 'variables.scss';
+
+
+*:focus {
+    outline-offset: 2px;
+}
+body {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'Muller', sans-serif;
+    margin: 0;
+
+}
+img {
+    max-width: 100%;
+}
+.main {
+    min-height: calc(100vh - 357px);
+}
+
+.section {
+    @media (min-width: 320px) and (max-width: 550px) {
+        padding-left: 6.25%;
+        padding-right: 6.25%;
+    }
+    padding-top: 95px;
+    padding-bottom: 115px;
+    &--gray {
+        background-color: $gray95;
+    }
+    .section-content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
+.spoiler-wrapper {
+    margin-top: 30px;
+}
+
+
+.spoiler-header {
+    position: relative;
+    background: #E0E0E0;
+    border: 2px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 1.5rem 4.5rem 1.5rem 2.5rem;
+    font-weight: 700;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: color .2s ease, box-shadow .2s ease, background .2s ease;
+    &:hover {
+        color: $main-color;
+        &::after {
+            background: url(../assets/icons/plus-hover.svg);
+        }
+    }
+    &.active {
+        color: $main-color;
+        &::after {
+            background: url(../assets/icons/plus-active.svg);
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        background: url(../assets/icons/plus.svg);
+        width: 15px;
+        height: 15px;
+        right: 25px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.spoiler-body {
+    display: none;
+    max-width: 750px;
+    background-color: $gray95;
+    padding: 20px 25px;
+}
+
+.contact-form {
+    max-width: 50rem;
+    margin: 0 auto;
+    .submit-btn-wrapper {
+        margin-top: 50px;
+        text-align: center;
+    }
+}
